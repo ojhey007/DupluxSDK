@@ -1,5 +1,7 @@
 {
   "name": "duphluxSDK",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
