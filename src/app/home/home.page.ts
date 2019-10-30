@@ -48,7 +48,7 @@ export class HomePage {
       this.verifyNumber.transaction_reference = uid
       this.duphluxCredentials.phone_number = `${this.credentials.phone_number}`;
       console.log(this.duphluxCredentials);
-      this.authService.nativePost2(url,this.duphluxCredentials).then((resp:any)=>{
+      this.authService.post(url,this.duphluxCredentials).then((resp:any)=>{
         this.duphluxService.hideLoader();
         let apiFeedBack = resp
         if(apiFeedBack.PayLoad.status == true){
@@ -69,7 +69,7 @@ private statusChecker(){
    let dialerLauched = val;
    if(dialerLauched){ /** if dialer has been lauched start checking for the status  */
     let url = 'https://duphlux.com/webservice/authe/status.json'
-      this.authService.nativePost2(url,this.verifyNumber).then((resp:any)=>{
+      this.authService.post(url,this.verifyNumber).then((resp:any)=>{
         console.log(this.verifyNumber)
         let duphluxResp = resp
         console.log(duphluxResp.PayLoad.data.verification_status)  /*** check if verified. */
