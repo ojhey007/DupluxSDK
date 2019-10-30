@@ -11,7 +11,7 @@ token:string ="37f563a1u06f11fbc0eefed226fc6b3be31128b" /** register and get you
     private http : HTTP
   ) { }
 
-  nativePost2(url:string,requestBody:any){
+  post(url:string,requestBody:any){
     this.http.setDataSerializer('json')
     return new Promise ((resolve,reject)=>{
       console.log("DEBUG data " + requestBody)
