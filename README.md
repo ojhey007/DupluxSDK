@@ -12,16 +12,6 @@
 
 --STEP THREE--
 
-**Run npm install --save @ionic/storage
-
-**ionic cordova plugin add call-number
-
-**npm install @ionic-native/call-number
-
-**Run npm install sweetalert2
-
---STEP FOUR--
-
 **Import and Add the neccessary native providers in app.module.ts
 
 **Run ionic cordova run (android / ios) 
