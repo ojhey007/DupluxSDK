@@ -4,7 +4,7 @@
 
 --STEP TWO--
 
-**Clone the repo to a folder
+**Clone the repo to a folder on your local machine
 
 **run npm install in your project folder to install all depedencies.
 
