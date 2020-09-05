@@ -6,7 +6,7 @@
 
 **Clone the repo to a folder
 
-**run npm install in the repo
+**run npm install in your project folder to install all depedencies.
 
 **Chill...
 
